@@ -1,97 +1,110 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us | VAssistant Ltd</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <title>Contact | V Assistant Ltd</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-       font-family: 'Raleway', sans-serif;
+      font-family: 'Raleway', sans-serif;
       background-color: #fcfbf9;
       color: #333;
       line-height: 1.6;
     }
 
-    header {
-      background-color: #fff;
-      padding: 20px;
+    nav {
+      background: #fff;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 1.5rem;
-      color: #b89b5e;
+    .nav-left, .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
     }
 
     nav a {
-      color: #ffffff;
       text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
+      color: #b89b5e;
+      font-weight: 600;
+      font-size: 1rem;
     }
 
     nav a:hover {
-      color: #b89b5e;
+      text-decoration: underline;
     }
 
-    main {
-      padding: 40px 20px;
-      max-width: 800px;
+    header {
+      text-align: center;
+      padding: 3rem 2rem 2rem;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #b89b5e;
+      margin-bottom: 0.5rem;
+    }
+
+    section {
+      max-width: 900px;
       margin: auto;
+      padding: 2rem;
     }
 
     h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
       color: #b89b5e;
+      margin-top: 2rem;
+      border-bottom: 1px solid #e3e3e3;
+      padding-bottom: 0.5rem;
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
+    .package-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
     }
 
-    label {
-      margin-top: 15px;
-      font-weight: bold;
+    .package {
+      background: #fff;
+      padding: 1.5rem;
+      border-left: 5px solid #b89b5e;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
     }
 
-    input,
-    textarea {
-      margin-top: 5px;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
+    .package h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.3rem;
+      color: #444;
     }
 
-    button {
-      margin-top: 20px;
-      background-color: #b89b5e;
-      color: #fff;
-      border: none;
-      padding: 12px;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 5px;
+    .package p {
+      margin: 0.3rem 0;
+      font-size: 0.95rem;
     }
 
-    button:hover {
-      background-color: #a5894e;
+    .package strong {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #222;
     }
 
     footer {
-      background-color: #1f1f1f;
-      color: #ffffff;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 2rem;
       font-size: 0.9rem;
+      color: #888;
+      background: #f9f9f9;
     }
 
   </style>
