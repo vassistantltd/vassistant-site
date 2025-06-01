@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact | V Assistant Ltd</title>
+  <title>Contact Us | V Assistant Ltd</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -53,50 +54,45 @@
     }
 
     section {
-      max-width: 900px;
+      max-width: 700px;
       margin: auto;
       padding: 2rem;
-    }
-
-    h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      color: #b89b5e;
-      margin-top: 2rem;
-      border-bottom: 1px solid #e3e3e3;
-      padding-bottom: 0.5rem;
-    }
-
-    .package-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .package {
       background: #fff;
-      padding: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
       border-left: 5px solid #b89b5e;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
     }
 
-    .package h3 {
-      font-size: 1.4rem;
-      margin-bottom: 0.3rem;
-      color: #444;
+    form {
+      display: grid;
+      gap: 1rem;
     }
 
-    .package p {
-      margin: 0.3rem 0;
-      font-size: 0.95rem;
+    label {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      display: block;
     }
 
-    .package strong {
-      display: inline-block;
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      color: #222;
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #b89b5e;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    button:hover {
+      background-color: #a4884f;
     }
 
     footer {
@@ -105,10 +101,6 @@
       font-size: 0.9rem;
       color: #888;
       background: #f9f9f9;
-    }
-   .highlight {
-      font-weight: 600;
-      color: #444;
     }
   </style>
 </head>
@@ -125,28 +117,29 @@
   </div>
 </nav>
 
-  <header>
-    <h1>Contact Us</h1> 
-    <p>Have a question or need support? Fill in the form below and we’ll get back to you shortly.</p>
+<header>
+  <h1>Contact Us</h1>
+  <p>Have a question or need support? Fill in the form below and we’ll get back to you shortly.</p>
 </header>
-    
-    <form action="mailto:Vassistantltd@outlook.com" method="post" enctype="text/plain">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="Name" required />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="Email" required />
+<section>
+  <form action="#" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required />
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="Message" rows="6" required></textarea>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
 
-      <button type="submit">Send Message</button>
-    </form>
-  </main>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
 
-  <footer>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
    &copy; 2025 V Assistant Ltd. Designed with elegance and intention. All rights reserved.
-  </footer>
+</footer>
 
 </body>
 </html>
